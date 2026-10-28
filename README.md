@@ -30,11 +30,17 @@
 WatchFace Studio is a desktop WYSIWYG editor for Zepp OS watch faces. Instead of manually writing index.js, you drag elements onto a 466×466 canvas, configure their properties in the adjacent panel, and see the result immediately. You can export the finished watch face as a developer .zpk package or as a source ZIP, which can be used to create a watch face for everyday use.
 	
 🖥️ Editor	PySide6, dark interface, canvas matching the watch screen at a 1:1 scale
+
 🎛️ Elements	11 types: text, data, weather, hands, rings, shortcuts, and more
+
 👁️ Preview	F5 mode, realistic sample data, PNG and animated GIF export
+
 📦 Export	.zpk for developer installation and a source ZIP for amazfitwatchfaces
+
 ⌚ Device	Amazfit Active 2 Round, 466×466, Zepp OS 5.0 / API 4.2
+
 🧩 Project	Readable project.json + assets/ folder, with no database or cloud
+
 ⚡ How it works in 30 seconds
 
     🚀 Launch the editor using run.bat or python main.py.
