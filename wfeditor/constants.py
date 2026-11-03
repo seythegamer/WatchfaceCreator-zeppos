@@ -3,9 +3,9 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-APP_NAME = "WatchFace Studio"
+APP_NAME = "WatchfaceCreator"
 APP_VERSION = "1.0.0"
-APP_TITLE = "WatchFace Studio - Amazfit Active 2 (Round)"
+APP_TITLE = "WatchfaceCreator - Amazfit Active 2 (Round)"
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 BUILTIN_DIR = ROOT_DIR / "assets"
@@ -15,8 +15,8 @@ BUILTIN_STATUS_DIR = BUILTIN_DIR / "status"
 BUILTIN_HANDS_DIR = BUILTIN_DIR / "hands"
 PROJECTS_DIR = ROOT_DIR / "projects"
 TEMPLATES_DIR = ROOT_DIR / "wfeditor" / "templates"
-SETTINGS_ORG = "WatchFaceStudio"
-SETTINGS_APP = "WatchFaceStudio"
+SETTINGS_ORG = "WatchfaceCreator"
+SETTINGS_APP = "WatchfaceCreator"
 
 DEVICE = {
     "id": "active2-round",

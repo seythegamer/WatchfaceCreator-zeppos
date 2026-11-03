@@ -128,7 +128,7 @@ def build_device_tree(
 
 def export_zpk(project: Project, target: Path) -> Path:
     target = Path(target)
-    with tempfile.TemporaryDirectory(prefix="wfstudio_") as tmp:
+    with tempfile.TemporaryDirectory(prefix="wfcreator_") as tmp:
         root = Path(tmp)
         build_device_tree(project, root)
         device_zip = _write_zip(root / "device", root / "device.zip")
@@ -142,7 +142,7 @@ def export_zpk(project: Project, target: Path) -> Path:
 
 def export_source_zip(project: Project, target: Path) -> Path:
     target = Path(target)
-    with tempfile.TemporaryDirectory(prefix="wfstudio_") as tmp:
+    with tempfile.TemporaryDirectory(prefix="wfcreator_") as tmp:
         root = Path(tmp)
         device = build_device_tree(
             project,

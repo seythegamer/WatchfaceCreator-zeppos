@@ -380,7 +380,7 @@ class MainWindow(QMainWindow):
         self._on_status("Podgląd czasu rzeczywistego włączony" if self.act_live.isChecked() else "Podgląd czasu przykładowego")
 
     def _temp_root(self) -> Path:
-        base = Path(tempfile.gettempdir()) / "WatchFaceStudio" / "projects"
+        base = Path(tempfile.gettempdir()) / "WatchfaceCreator" / "projects"
         base.mkdir(parents=True, exist_ok=True)
         return base / f"{slugify(self.project.name)}-{uuid.uuid4().hex[:6]}"
 

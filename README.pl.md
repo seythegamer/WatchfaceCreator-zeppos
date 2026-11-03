@@ -2,7 +2,7 @@
   <img src="images/hero.png" width="240" alt="Podgląd tarczy z szablonu Cyfrowa na Amazfit Active 2 Round">
 </p>
 
-<h1 align="center">WatchFace Studio</h1>
+<h1 align="center">WatchfaceCreator</h1>
 
 <p align="center">
   <strong>Edytor graficzny tarcz zegarka — złóż, sprawdź i wyeksportuj tarczę bez pisania kodu.</strong><br>
@@ -24,16 +24,16 @@
 </p>
 
 > [!WARNING]
-> **Urządzenie docelowe:** WatchFace Studio jest zbudowany i dostrojony wyłącznie pod **Amazfit Active 2 Round (466×466)**. Nie był testowany na innych zegarkach. Inne modele Zepp OS mogą działać, ale układ, czcionki, wskazówki i wyrównanie tekstu nie są gwarantowane.
+> **Urządzenie docelowe:** WatchfaceCreator jest zbudowany i dostrojony wyłącznie pod **Amazfit Active 2 Round (466×466)**. Nie był testowany na innych zegarkach. Inne modele Zepp OS mogą działać, ale układ, czcionki, wskazówki i wyrównanie tekstu nie są gwarantowane.
 
 > [!NOTE]
 > **Projekt hobbystyczny, tworzony iteracyjnie z pomocą AI.** To nie jest komercyjny, audytowany produkt. Kod był testowany tam, gdzie było to możliwe, ale przed publikacją tarczy zawsze sprawdź ją na własnym zegarku.
 
 ---
 
-## ✨ Czym jest WatchFace Studio?
+## ✨ Czym jest WatchfaceCreator?
 
-WatchFace Studio to desktopowy edytor **WYSIWYG** dla tarcz Zepp OS. Zamiast ręcznie pisać `index.js`, przeciągasz elementy na płótnie 466×466, ustawiasz właściwości w panelu obok i od razu widzisz wynik. Gotową tarczę eksportujesz do paczki deweloperskiej `.zpk` albo do ZIP źródłowego, z którego powstaje tarcza do codziennego użytku.
+WatchfaceCreator to desktopowy edytor **WYSIWYG** dla tarcz Zepp OS. Zamiast ręcznie pisać `index.js`, przeciągasz elementy na płótnie 466×466, ustawiasz właściwości w panelu obok i od razu widzisz wynik. Gotową tarczę eksportujesz do paczki deweloperskiej `.zpk` albo do ZIP źródłowego, z którego powstaje tarcza do codziennego użytku.
 
 | | |
 |---|---|
@@ -71,7 +71,7 @@ project.json + assets/
 ## 📸 Zrzuty ekranu
 
 <p align="center">
-  <img src="images/editor.png" width="860" alt="Edytor WatchFace Studio z panelem właściwości i listą warstw"><br>
+  <img src="images/editor.png" width="860" alt="Edytor WatchfaceCreator z panelem właściwości i listą warstw"><br>
   <sub><strong>Edytor</strong> — płótno 466×466, biblioteka elementów, właściwości i warstwy w jednym oknie.</sub>
 </p>
 
@@ -104,7 +104,7 @@ project.json + assets/
 ### Instalacja i uruchomienie
 
 ```powershell
-cd sciezka\do\watchfaceeditor
+cd sciezka\do\WatchfaceCreator
 python -m pip install -r requirements.txt
 python main.py
 ```
@@ -260,7 +260,7 @@ Edytor jest podzielony na warstwy: model projektu, renderer, generator kodu i ek
 
 `wfeditor/model.py` przechowuje `Project` i `Element` jako dataclasses. Projekt zapisuje się do `project.json`, a obrazy i fonty do `assets/`. Historia zmian (undo/redo) żyje tylko w pamięci — nie jest zapisywana do pliku.
 
-Nowa, niezapisana tarcza trafia tymczasowo do `%TEMP%\WatchFaceStudio\projects`. Przy **Zapisz jako** edytor proponuje katalog `projects/` w repo, ale możesz wybrać dowolne miejsce. Katalog `projects/` jest ignorowany przez git.
+Nowa, niezapisana tarcza trafia tymczasowo do `%TEMP%\WatchfaceCreator\projects`. Przy **Zapisz jako** edytor proponuje katalog `projects/` w repo, ale możesz wybrać dowolne miejsce. Katalog `projects/` jest ignorowany przez git.
 
 ### 2. Renderer
 

@@ -2,7 +2,7 @@
   <img src="images/hero.png" width="240" alt="Watch face preview from the Digital template on Amazfit Active 2 Round">
 </p>
 
-<h1 align="center">WatchFace Studio</h1>
+<h1 align="center">WatchfaceCreator</h1>
 
 <p align="center">
   <strong>A graphical watch face editor — compose, preview, and export without writing code.</strong><br>
@@ -24,16 +24,16 @@
 </p>
 
 > [!WARNING]
-> **Target device:** WatchFace Studio is built and tuned exclusively for the **Amazfit Active 2 Round (466×466)**. It has not been tested on other watches. Other Zepp OS models may work, but layout, fonts, hands, and text alignment are not guaranteed.
+> **Target device:** WatchfaceCreator is built and tuned exclusively for the **Amazfit Active 2 Round (466×466)**. It has not been tested on other watches. Other Zepp OS models may work, but layout, fonts, hands, and text alignment are not guaranteed.
 
 > [!NOTE]
 > **Hobby project, built iteratively with AI assistance.** This is not commercial, audited production code. It was tested where possible, but always check a watch face on your own watch before publishing it.
 
 ---
 
-## ✨ What is WatchFace Studio?
+## ✨ What is WatchfaceCreator?
 
-WatchFace Studio is a desktop **WYSIWYG** editor for Zepp OS watch faces. Instead of hand-writing `index.js`, you drag elements onto a 466×466 canvas, adjust properties in the side panel, and see the result immediately. Export the finished face as a developer `.zpk` package or as a source ZIP that becomes an everyday watch face.
+WatchfaceCreator is a desktop **WYSIWYG** editor for Zepp OS watch faces. Instead of hand-writing `index.js`, you drag elements onto a 466×466 canvas, adjust properties in the side panel, and see the result immediately. Export the finished face as a developer `.zpk` package or as a source ZIP that becomes an everyday watch face.
 
 | | |
 |---|---|
@@ -71,7 +71,7 @@ project.json + assets/
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="images/editor.png" width="860" alt="WatchFace Studio editor with properties panel and layer list"><br>
+  <img src="images/editor.png" width="860" alt="WatchfaceCreator editor with properties panel and layer list"><br>
   <sub><strong>Editor</strong> — 466×466 canvas, element library, properties, and layers in one window.</sub>
 </p>
 
@@ -104,7 +104,7 @@ project.json + assets/
 ### Install and run
 
 ```powershell
-cd path\to\watchfaceeditor
+cd path\to\WatchfaceCreator
 python -m pip install -r requirements.txt
 python main.py
 ```
@@ -260,7 +260,7 @@ The editor is split into layers: the project model, renderer, code generator, an
 
 `wfeditor/model.py` stores `Project` and `Element` as dataclasses. A project is saved to `project.json`, while images and fonts go into `assets/`. The undo/redo history lives in memory only — it is not saved to disk.
 
-A new, unsaved watch face goes temporarily to `%TEMP%\WatchFaceStudio\projects`. On **Zapisz jako** (Save As), the editor proposes the repo's `projects/` directory, but you can choose any location. The `projects/` directory is ignored by git.
+A new, unsaved watch face goes temporarily to `%TEMP%\WatchfaceCreator\projects`. On **Zapisz jako** (Save As), the editor proposes the repo's `projects/` directory, but you can choose any location. The `projects/` directory is ignored by git.
 
 ### 2. Renderer
 

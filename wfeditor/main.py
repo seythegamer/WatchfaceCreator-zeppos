@@ -24,7 +24,7 @@ def _prepare_project(settings: QSettings) -> tuple[Project, Path | None]:
                 return Project.load(folder), folder
             except Exception as error:  # noqa: BLE001
                 print(f"Nie można wczytać ostatniego projektu {folder}: {error}")
-    base = Path(tempfile.gettempdir()) / "WatchFaceStudio" / "projects"
+    base = Path(tempfile.gettempdir()) / "WatchfaceCreator" / "projects"
     base.mkdir(parents=True, exist_ok=True)
     root = base / f"nowa-tarcza-{uuid.uuid4().hex[:6]}"
     project = make_project("Moja tarcza", "Cyfrowa", root)
