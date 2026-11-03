@@ -109,7 +109,7 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-Alternatywnie kliknij dwukrotnie **`run.bat`** — przy pierwszym uruchomieniu utworzy `.venv`, doinstaluje zależności i dopiero potem uruchomi edytor.
+Alternatywnie kliknij dwukrotnie **`run.bat`** — utworzy `.venv`, doinstaluje zależności, jeśli ich brakuje (pierwsze uruchomienie albo przerwana instalacja), i dopiero potem uruchomi edytor. Jeśli okno od razu się zamyka, uruchom `run.bat` z terminala, żeby zobaczyć komunikat, albo usuń folder `.venv` i spróbuj ponownie.
 
 ### Szybka kontrola jakości
 

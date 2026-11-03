@@ -109,7 +109,7 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-Alternatively, double-click **`run.bat`** — on first launch it creates `.venv`, installs dependencies, and then starts the editor.
+Alternatively, double-click **`run.bat`** — it creates `.venv`, installs dependencies whenever they are missing (first launch or an interrupted install), and then starts the editor. If the window closes immediately, run `run.bat` from a terminal to see the message, or delete `.venv` and try again.
 
 ### Quick quality check
 
